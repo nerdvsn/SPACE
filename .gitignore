@@ -1,0 +1,81 @@
+################################
+#### 🛑 VERFÜGUNG: ALLES IGNORIEREN 🛑 ####
+################################
+
+# Ignoriere alle Dateien und Ordner. Erlaubte Typen werden in den
+# folgenden Abschnitten explizit wieder zugelassen.
+*
+
+# AUSNAHMEN für den CODE (Explizit zugelassene Dateien)
+# Erlaube Python-Code und Jupyter-Notebooks
+!*.py
+!*.ipynb
+
+# Erlaube die .gitignore selbst
+!.gitignore
+
+# Erlaube, dass die Ordnerstruktur durchsucht werden kann (wichtig für die obigen Ausnahmen)
+!*/
+
+################################
+#### ⚙️ Temporäre und Build-Ordner ⚙️ ####
+################################
+# Diese Ordner werden jetzt durch die * Regel oben ignoriert.
+# Wir fügen sie hier nur zur Klarheit und Redundanz hinzu, falls die allgemeine Regel *
+# in manchen Git-Versionen/Konfigurationen nicht wie erwartet greift.
+build/
+html/
+.benchmarks/
+reports/
+lectures/
+logs/
+models/
+ressources/
+.ruff_cache
+venv/
+.venv/
+target/
+docs/build/
+/site
+.vscode/
+.history
+
+
+################################
+#### 🗑️ Binär- und Mediendateien 🗑️ ####
+################################
+
+# Deep Learning / Modelle / Daten
+*.h5
+*.mat
+*.pth
+*.pt
+*.onnx
+*.pkl
+*.pb
+*.ckpt
+
+# Konfigurations- und Datenformate
+*.json # NEU: Explizit ignorieren
+*.yaml
+*.yml
+*.csv
+*.xls
+*.xlsx
+
+# Binärdateien
+*.exe
+
+# Mediendateien (Bilder, Audio)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.mp3
+*.wav
+*.ogg
+*.flac
