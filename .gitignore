@@ -10,6 +10,8 @@
 # Erlaube Python-Code und Jupyter-Notebooks
 !*.py
 !*.ipynb
+!*.mat
+!*.cpp
 
 # Erlaube die .gitignore selbst
 !.gitignore
